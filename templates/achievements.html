@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        color: #222;
+      }
+      header {
+        background: #0c7874;
+        color: #fff;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      header h1 {
+        margin: 0.2em 0 0.1em 0;
+        font-size: 2.2em;
+        letter-spacing: 2px;
+      }
+      nav {
+        margin: 1em 0;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1.5em;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #ffd700;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 2em auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+        padding: 2em 2.5em;
+      }
+      h2 {
+        color: #13906f;
+        border-left: 4px solid #8c8989;
+        padding-left: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3em;
+        gap: 2em;
+        border: 1px solid transparent;
+      }
+      .row-reverse {
+        flex-direction: row-reverse !important;
+      }
+      .content {
+        flex: 1;
+        padding: 1em;
+        background: #f9fafc;
+        border-radius: 8px;
+      }
+      .image-section {
+        flex: 1;
+        text-align: center;
+        background: #f4f6fb;
+        border-radius: 8px;
+        padding: 1em;
+      }
+      .image-section img {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .content h3 {
+        color: #0c7874;
+        margin-bottom: 0.5em;
+      }
+      .content p {
+        line-height: 1.6;
+        color: #555;
+      }
+      .content a {
+        color: #0c7874;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .content a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        background: #0c7874;
+        color: #fff;
+        padding: 2em 0;
+        margin-top: 3em;
+        text-align: center;
+      }
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 2em;
+        padding: 0 2em;
+      }
+      .footer-section h4 {
+        color: #ffd700;
+        margin-bottom: 1em;
+        font-size: 1.1em;
+      }
+      .footer-section p {
+        margin: 0.5em 0;
+        line-height: 1.5;
+      }
+      .footer-section a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-section a:hover {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      .footer-bottom {
+        border-top: 1px solid #13906f;
+        margin-top: 1.5em;
+        padding-top: 1em;
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+
+      @media (max-width: 768px) {
+        .row,
+        .row-reverse {
+          flex-direction: column;
+        }
+        .container {
+          padding: 1em;
+        }
+        header h1 {
+          font-size: 1.2em;
+        }
+        .footer {
+          padding: 1em;
+        }
+        .footer-content {
+          flex-direction: column;
+          gap: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SANGAMITHRA M</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/extra curricular activities">Extra Curricular activities</a>
+        <a href="/educationalqualification">Education</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Extra Curricular activities</h2>
+
+      <!-- First Row: Left Content, Right Picture -->
+      <div class="row">
+        <div class="content">
+          <h3>Hockey India Junior Women South Zone Championship 2023</h3>
+          <p>
+            Secured a <strong>SILVER medal</strong> in the prestigious
+            <b>Hockey India Junior Women South Zone Championship 2023</b>. This
+            achievement represents years of dedication, training, and teamwork
+            in the sport of hockey.
+          </p>
+          <p>
+            This tournament was a significant milestone in my sporting career,
+            showcasing not just athletic prowess but also leadership skills and
+            strategic thinking under pressure.
+          </p>
+          <a
+            href="https://www.youtube.com/live/A2hVeE5wFi8?si=HMg_FqtM1BrDN4AL"
+            target="_blank"
+            >Watch Tournament Highlights →</a
+          >
+        </div>
+        <div class="image-section">
+          <img
+            src="{{ url_for('static', filename='my fav.jpg') }}"
+            alt="Hockey Achievement"
+          />
+        </div>
+      </div>
+
+      <!-- Second Row: Left Picture, Right Content -->
+      <div class="row">
+        <div class="image-section">
+          <img
+            src="{{ url_for('static', filename='universityHockey.jpg') }}"
+            alt="Team Hockey"
+          />
+        </div>
+        <div class="content">
+          <h3>University Level Hockey</h3>
+          <p>
+            Participated in <strong>SOUTHZONE UNIVERSITY</strong> matches in the
+            event of <strong>HOCKEY</strong> for consecutively
+            <strong>2 years</strong>. This experience has been invaluable in
+            developing team coordination, strategic thinking, and competitive
+            spirit.
+          </p>
+        </div>
+      </div>
+
+      <!-- Third Row: Left Content, Right Picture -->
+      <div class="row">
+        <div class="content">
+          <h3>Cross Country Running</h3>
+          <p>
+            Participated in <strong>ALL INDIA UNIVERSITY</strong> matches in the
+            event of <strong>CROSS COUNTRY</strong>. This achievement
+            demonstrates my versatility as an athlete and my ability to excel in
+            different sports disciplines.
+          </p>
+          <p>
+            Cross country running has enhanced my endurance, mental toughness,
+            and ability to push through physical challenges - skills that are
+            valuable both in sports and professional life.
+          </p>
+        </div>
+        <div class="image-section">
+          <img
+            src="{{ url_for('static', filename='cross country.jpg') }}"
+            alt="Team Hockey"
+          />
+        </div>
+      </div>
+
+      <!-- Fourth Row: Left Picture, Right Content -->
+      <div class="row">
+        <div class="image-section">
+          <img
+            src="{{ url_for('static', filename='IMG-20240522-WA0026[1].jpg') }}"
+            alt="Hockey Interzone"
+          />
+        </div>
+        <div class="content">
+          <h3>Hockey Interzone Champion</h3>
+          <p>
+            <strong>Hockey Interzone Winner</strong> for consecutively
+            <strong>2 years</strong>, demonstrating consistent excellence and
+            dominance in regional hockey competitions.
+          </p>
+          <p>
+            This remarkable achievement showcases my dedication, skill
+            development, and ability to maintain peak performance over multiple
+            seasons. Winning back-to-back championships required not just
+            individual talent but also strong team coordination and strategic
+            gameplay.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Information</h4>
+          <p><strong>Address:</strong> coimbatore, Tamil Nadu, India</p>
+          <p><strong>Phone:</strong> +91 63811 47062</p>
+        </div>
+        <div class="footer-section">
+          <h4>Professional Links</h4>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://linkedin.com/in/sangamithra-m" target="_blank"
+              >linkedin.com/in/sangamithra-m</a
+            >
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:sangamithramailsamy@gmail.com"
+              >sangamithramailsamy@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sangamithra M. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

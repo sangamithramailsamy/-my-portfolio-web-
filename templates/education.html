@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        color: #222;
+      }
+      header {
+        background: #0c7874;
+        color: #fff;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      header h1 {
+        margin: 0.2em 0 0.1em 0;
+        font-size: 2.2em;
+        letter-spacing: 2px;
+      }
+      nav {
+        margin: 1em 0;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1.5em;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #ffd700;
+      }
+      .container {
+        max-width: 900px;
+        margin: 2em auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+        padding: 2em 2.5em;
+      }
+      h2 {
+        color: #13906f;
+        border-left: 4px solid #8c8989;
+        padding-left: 0.5em;
+        margin-bottom: 1em;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5em;
+      }
+      th,
+      td {
+        border: 1px solid #cfd8dc;
+        padding: 0.8em 1em;
+        text-align: left;
+      }
+      th {
+        background: #f4f6fb;
+        color: #0c7874;
+      }
+      tr:nth-child(even) {
+        background: #f9fafc;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 1em;
+        }
+        header h1 {
+          font-size: 1.2em;
+        }
+        th,
+        td {
+          font-size: 0.95em;
+        }
+      }
+      @media (max-width: 768px) {
+        .row,
+        .row:nth-child(even) {
+          flex-direction: column;
+        }
+        .container {
+          padding: 1em;
+        }
+        header h1 {
+          font-size: 1.2em;
+        }
+      }
+
+      .footer {
+        background: #0c7874;
+        color: #fff;
+        padding: 2em 0;
+        margin-top: 3em;
+        text-align: center;
+      }
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 2em;
+        padding: 0 2em;
+      }
+      .footer-section h4 {
+        color: #ffd700;
+        margin-bottom: 1em;
+        font-size: 1.1em;
+      }
+      .footer-section p {
+        margin: 0.5em 0;
+        line-height: 1.5;
+      }
+      .footer-section a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-section a:hover {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      .footer-bottom {
+        border-top: 1px solid #13906f;
+        margin-top: 1.5em;
+        padding-top: 1em;
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+          gap: 1em;
+        }
+        .footer {
+          padding: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SANGAMITHRA M</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/extra curricular activities">Extra Curricular activities</a>
+        <a href="/educationalqualification">Education</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Grade/CGPA</th>
+        </tr>
+        <tr>
+          <td>B.E. Electronics & Communication Engineering</td>
+          <td>Anna University</td>
+          <td>2021-2025</td>
+          <td>8.5 (Current)</td>
+        </tr>
+        <tr>
+          <td>HSC (12th)</td>
+          <td>XYZ Higher Secondary School</td>
+          <td>2021</td>
+          <td>92%</td>
+        </tr>
+        <tr>
+          <td>SSLC (10th)</td>
+          <td>XYZ Higher Secondary School</td>
+          <td>2019</td>
+          <td>95%</td>
+        </tr>
+      </table>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: sangamithramailsamy@gmail.com</p>
+          <p>Phone: +91 638-114-7062</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/sangamithra-m" target="_blank"
+              >Sangamithra M</a
+            >
+          </p>
+          <p>
+            GitHub:
+            <a href="https://github.com/sangamithra-m" target="_blank"
+              >sangamithra-m</a
+            >
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Address</h4>
+          <p>123, Main Street, City, Country</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2023 Sangamithra M. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
