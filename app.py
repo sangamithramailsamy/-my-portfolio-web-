@@ -52,7 +52,7 @@ def about():
 def resume(filename):
      return send_from_directory('static/resume', filename)
 
-@app.route('/extra curricular activities')
+@app.route('/extracurricular')
 def achievements():
     return render_template('achievements.html')
 
