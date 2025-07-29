@@ -12,7 +12,7 @@
         color: #222;
       }
       header {
-        background: #0c7874;
+        background: #0d6663;
         color: #fff;
         padding: 2rem 0 1rem 0;
         text-align: center;
@@ -31,15 +31,46 @@
       nav {
         margin: 1em 0;
       }
+      nav {
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
       nav a {
         color: #fff;
         text-decoration: none;
-        margin: 0 1.5em;
-        font-weight: 500;
-        transition: color 0.2s;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        transition: background 0.2s;
+        font-size: 1em;
       }
+
       nav a:hover {
         color: #ffd700;
+      }
+
+      @media (max-width: 700px) {
+        nav {
+          flex-direction: column;
+          gap: 0.5em;
+          align-items: stretch;
+          background: #0d6663;
+          padding: 1em 0;
+        }
+        nav a {
+          font-size: 1.1em;
+          padding: 0.8em 0;
+          background: #0d6663;
+          color: #fff;
+          border-radius: 0;
+          text-align: center;
+        }
+        nav a:last-child {
+          border-bottom: none;
+        }
       }
       .container {
         max-width: 900px;
@@ -53,35 +84,45 @@
         margin-bottom: 2.5em;
       }
       h2 {
-        color: #13906f;
+        color: #0d6663;
         border-left: 4px solid #8c8989;
         padding-left: 0.5em;
         margin-bottom: 1em;
       }
       .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5em;
+        margin-top: 1.5em;
+        display: block;
       }
-      .project-card {
-        background: #f9fafc;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        padding: 1.2em 1em;
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .project-card:hover {
-        transform: translateY(-4px) scale(1.03);
-        box-shadow: 0 6px 24px rgba(44, 62, 80, 0.1);
+      .project-item {
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #e0e0e0;
       }
       .project-title {
+        font-weight: bold;
         font-size: 1.1em;
-        font-weight: 600;
-        margin-bottom: 0.5em;
+        color: #0e0f0f;
+        margin-bottom: 0.3em;
       }
       .project-desc {
         color: #555;
+        margin-bottom: 0.5em;
+      }
+      .project-link a {
+        color: #0d6663;
+        text-decoration: underline;
         font-size: 0.98em;
+      }
+      .project-link a:hover {
+        color: #ffd700;
+      }
+      @media (max-width: 700px) {
+        .projects {
+          margin-top: 1em;
+        }
+        .project-item {
+          padding-bottom: 0.7em;
+        }
       }
       .contact-form {
         display: flex;
@@ -112,10 +153,10 @@
         color: #2d3e50;
       }
       .success-msg {
-        color: green;
+        color: rgb(24, 88, 24);
       }
       .error-msg {
-        color: red;
+        color: rgb(138, 3, 3);
       }
       @media (max-width: 600px) {
         .container {
@@ -127,7 +168,7 @@
       }
 
       .footer {
-        background: #0c7874;
+        background: #0d6663;
         color: #fff;
         padding: 2em 0;
         margin-top: 3em;
@@ -190,6 +231,9 @@
           width: 100%;
         }
       }
+      .project-link {
+        margin-top: 1em !important;
+      }
     </style>
   </head>
   <body>
@@ -217,26 +261,36 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
-          <div class="project-card">
+          <div class="project-item">
             <div class="project-title">Portfolio Website</div>
             <div class="project-desc">
               A personal portfolio website built with Flask to showcase my
               skills, projects, and contact information.
             </div>
+            <div class="project-link">
+              <a
+                href="https://sangamithra-persional-portfolio.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Source</a
+              >
+            </div>
           </div>
-          <div class="project-card">
+          <div class="project-item">
             <div class="project-title">Data Analysis Tool</div>
             <div class="project-desc">
               A Python-based tool for analyzing and visualizing data, featuring
               interactive charts and export options.
             </div>
+            <div class="project-link"><a href="#">View Source</a></div>
           </div>
-          <div class="project-card">
+          <div class="project-item">
             <div class="project-title">Open Source Contributions</div>
             <div class="project-desc">
               Active contributor to several open source projects, focusing on
               bug fixes, documentation, and feature enhancements.
             </div>
+            <div class="project-link"><a href="#">View Profile</a></div>
           </div>
         </div>
       </section>
